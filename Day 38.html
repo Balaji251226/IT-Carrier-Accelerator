@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 38</title>
+    </head>
+    <body>
+        <style>
+            h1,h2{
+                text-align: center;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: blue;
+            }
+            pre{
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: crimson;
+            }
+            ol{
+                font-size: 18px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: darkmagenta;
+            }
+            .glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 38</b></button></a></h1>
+        <h1><mark>FEAR</mark></h1>
+        <h2>Overthinking is starting point of your fear</h2>
+        <h2>How To Overcome ?</h2>
+        <pre> <b>
+            <span style='font-size:30px;'>&#11166;</span> Presentation Be in the present place mind and body same place la kondu varanum<br>
+            <span style='font-size:30px;'>&#11166;</span> Nenga Pesa Poringiratha maranthuranum topic ha illa<br> 
+            <span style='font-size:30px;'>&#11166;</span> Calm yourself normal<br>
+            <span style='font-size:30px;'>&#11166;</span> Engage with the people at the moment in presentation<br>
+            <span style='font-size:30px;'>&#11166;</span> Focus in the presentation <br>
+            <span style='font-size:30px;'>&#11166;</span> Seperate yourself from the situations</pre>
+        <h2><mark><q>Communication Is Mindset</q></mark></h2>
+        <h2 style="text-align: left;"> <mark>Physical Motivate yourself</mark></h2>
+        <ol>
+            <li>Relax  Mind -  Breathe In and Breathe Out</li><br>
+            <li>Relax your body</li><br>
+            <ol>
+                <li>Self Hug</li>
+                <li>Touch Your Heart And Tell This <mark>All is Well</mark></li>
+                <li>Do Something Physical</li><br>
+            </ol>
+            <li>Body language</li><br>
+            <li>Tonation</li><br>
+            <li>Pace</li><br>
+            </ol>
+        </ol></b>
+    </body>
+</html>

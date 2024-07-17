@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 29</title>
+    </head>
+    <body>
+        <style>
+            h1,h2{
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            p{
+                font-size: 22px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: crimson;
+            }
+
+            ol{
+                font-size: 22px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: blueviolet;
+            }
+            .glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><a href="index.html"><button class="glow-on-hover" type="button"> <b>Day 29</b></button> </a></h1>
+        <h1><mark><b>What an Employer Expect</mark></h1>
+        <h2><mark><q>If you are not commmited one thing
+            If you distracted anything
+        </q></mark></h2>
+        <h2>Focused , Mindset, commmited</h2>
+        <p><b>Employer oda weight ha distribute panrangala galanu papen, as employe ya ennodo part ennava irukum nu yosikanum so antha idathahul nama tha Decision maker ha irupom</p>
+        <ol>
+            <li>Take Responsibilities Quickly</li>
+            <li>Saying Yes</li>
+            <li>Fist man ha hand rise pannanum</li>
+            <li>Problem solving skill irukanum</li>
+            <li>Technical Skill irukanum</li>
+        </ol>
+        <h2><mark> Short Term Carrier Goal</mark></h2>
+        <p><b>Get in a IT Job for frontend developer role in next three months in reputed company<br>
+        so first month i started full fetched & learned html,css, js deep and deapth my roadmap wise and understand
+        that concepts and learning.<br>second months i learned a frame works and practice more and i started my own
+        project in 15 days. next month i search company for my role  </p>
+
+        <h2><mark> Long Term Carrier Goal</mark> </h2>
+        <p>I get in a job and i take Responsibilities to be Quickly.And i jon the company next 6 months kula ennodo
+            role la next level ku poganum like team lead and project manager...<br>
+            Next  3 or 4 years kula ennodo own startup company ya start pannuven.I can do that<br>
+            I achieve my goal.
+         </p>
+    </body>
+
+</html>

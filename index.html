@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Project</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- instagram -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+        
+        <style>
+            h1{
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-display: none;
+                color: darkgreen;
+            }
+            button{
+                display: inline-block;
+                border-radius: 10px;
+                background-color: #04aa6d;
+                border: none;
+                color: #ffffff;
+                text-align: center;
+                font-size: 20px;
+                padding: 5px 10px;
+                cursor: pointer;
+                text-decoration: none;
+                outline: none;
+                box-shadow: 0 9px #999;
+            }
+            button:hover {background-color: #3e8341;}
+
+            button:active {
+                background-color: #3e8341;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+ body {
+  padding: 0;
+  margin: 0; 
+  /* height: 100vh; */
+  background:aliceblue;
+  font-family: 'Poppins', sans-serif;
+  /* display:flex; */
+  justify-content: center;
+  align-items: center;
+  
+}
+
+            
+ul {
+  position: relative;
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin-left: auto;
+  margin-left: auto;
+}
+
+label {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 50px;
+  z-index: 100;
+}
+
+div {
+
+  position:relative;
+  height: 60px;
+  width: 60px;
+  background: #18191f;
+  color: #555;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 46px;
+  cursor: pointer;
+  margin: 0 4px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+    4px 4px 6px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+  div:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 75px;
+  height: 38px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+}  
+
+
+input[type="checkbox"]:checked ~ div {
+  box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: yellow;
+  text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+  animation: glow 1.5s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+} 
+
+#footer{
+  font-size: 30px;
+  text-align: center;
+  /* background-color: black; */
+  color: black;
+  /* border: 4px dotted black; */
+  border-radius: 2px 4px 6px 8px;
+  /* border-style: dashed dotted dashed dotted; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  background:linear-gradient( skyblue lightgreen lightyellow);
+
+}
+
+/* social media icon css */
+/* .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+} */
+
+
+/* .fa-instagram {
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  color: white; */
+
+  #insta {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  font-size: 50px; /* change this to change the size*/
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.img{
+  
+  margin: 10px;
+  /* display:block; */
+  /* position: center; */
+
+}
+
+
+        </style>
+    </head>
+<body>
+    <ul>
+        <li>
+          <input type="checkbox" />
+          <div>4</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>5</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>D</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>A</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>Y</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>S</div>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <div>L</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>I</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>V</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>E</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>C</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>L</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>A</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>S</div>
+        </li>
+        <li>
+            <input type="checkbox" />
+            <div>S</div>
+        </li>
+      </ul><br><br>
+    <!-- <h1>45 DAYS LIVE CLASS</h1> -->
+  
+    <center>
+    <table id="hi" border="1" cellspacing="10" cellpadding="15">
+        <tr>
+            <th><a href="Day 1.html"><button>Day 1</button></a></th>
+            <th><a href="Day 2.html"><button>Day 2</button></a></th>
+            <th><a href="Day 3.html"><button>Day 3</button></a> </th>
+            <th><a href="Day 4.html"><button>Day 4</button></a></th>
+            <th><a href="Day 5.html"><button>Day 5</button></a></th>
+            <th><a href="Day 6.html"><button>Day 6</button></a></th>
+            <th><a href="Day 7.html"><button>Day 7</button></a></th>
+            <th><a href="Day 8.html"><button>Day 8</button></a></th>
+            <th><a href="Day 9.html"><button>Day 9</button></a></th>
+            <th><a href="Day 10.html"><button>Day 10</button></a></th>
+        </tr>
+        <tr>
+            <th><a href="Day 11.html"><button>Day 11</button></a></th>
+            <th><a href="Day 12.html"><button>Day 12</button></a></th>
+            <th><a href="Day 13.html"><button>Day 13</button></a></th>
+            <th><a href="Day 14.html"><button>Day 14</button></a></th>
+            <th><a href="Day 15.html"><button>Day 15</button></a></th>
+            <th><a href="Day 16.html"><button>Day 16</button></a></th>
+            <th><a href="Day 17.html"><button>Day 17</button></a></th>
+            <th><a href="Day 18.html"><button>Day 18</button></a></th>
+            <th><a href="Day 19.html"><button>Day 19</button></a></th>
+            <th><a href="Day 20.html"><button>Day 20</button></a></th>
+        </tr>
+        <tr>
+            <th><a href="Day 21.html"><button>Day 21</button></a></th>
+            <th><a href="Day 22.html"><button>Day 22</button></a></th>
+            <th><a href="Day 23.html"><button>Day 23</button></a></th>
+            <th><a href="Day 24.html"><button>Day 24</button></a></th>
+            <th><a href="Day 25.html"><button>Day 25</button></a></th>
+            <th><a href="Day 26.html"><button>Day 26</button></a></th>
+            <th><a href="Day 27.html"><button>Day 27</button></a></th>
+            <th><a href="Day 28.html"><button>Day 28</button></a></th>
+            <th><a href="Day 29.html"><button>Day 29</button></a></th>
+            <th><a href="Day 30.html"><button>Day 30</button></a></th>
+        </tr>
+        <tr>
+            <th><a href="Day 31.html"><button>Day 31</button></a></th>
+            <th><a href="Day 32.html"><button>Day 32</button></a></th>
+            <th><a href="Day 33.html"><button>Day 33</button></a></th>
+            <th><a href="Day 34.html"><button>Day 34</button></a></th>
+            <th><a href="Day 35.html"><button>Day 35</button></a></th>
+            <th><a href="Day 36.html"><button>Day 36</button></a></th>
+            <th><a href="Day 37.html"><button>Day 37</button></a></th>
+            <th><a href="Day 38.html"><button>Day 38</button></a></th>
+            <th><a href="Day 39.html"><button>Day 39</button></a></th>
+            <th><a href="Day 40.html"><button>Day 40</button></a></th>
+        </tr>
+        <tr>
+            <th  colspan="2"><a href="Day 41.html"><button>Day 41</button></a></th>
+            <th  colspan="2"><a href="Day 42.html"><button>Day 42</button></a></th>
+            <th  colspan="2"><a href="Day 43.html"><button>Day 43</button></a></th>
+            <th  colspan="2"><a href="Day 44.html"><button>Day 44</button></a></th>
+            <th  colspan="2"><a href="Day 45.html"><button>Day 45</button></a></th>
+        </tr>
+    </table>
+    </center>
+    <h2 id="footer" >Developed By <br>
+      <font color="red" >B</font>
+      <font color="blue">A</font>
+      <font color="navy">L</font>
+      <font color="green">A</font>
+      <font color="violet">J</font>
+      <font color="orange">I</font></h2>
+
+      <!-- <a href="#" class="fa fa-facebook"></a> -->
+      <!-- <a href="#" class="fa fa-linkedin"></a> -->
+      <!-- <a href="#" class="fa fa-instagram"></a> -->
+       <center>
+      <a href="https://www.instagram.com/balaji___20_/?next=https%3A%2F%2Fwww.instagram.com%2Fexplore%2Fsearch%2F%3F__coig_login%3D1"><i class="fa fa-instagram" id="insta" aria-hidden="true">
+      </i></a>
+
+      <a href="https://www.linkedin.com/in/balaji-k-g-9310302a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="images/linkedin.png" width="39px" margin-right="10px"></img></a>
+
+     <a href="https://github.com/Balaji251226"><img src="images/git.png" clas="img" width="39px" margin-right="80px"></a>
+      </center>
+</body>
+</html>

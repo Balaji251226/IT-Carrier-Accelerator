@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 19</title>
+    </head>
+    <body>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            pre{
+                font-size: 22px;
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(128, 0, 0);
+            }
+
+            .glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 19</b></button></a></h1>
+        <h1><mark><b> Finalised Roadmap Plan</mark></h1>
+        <h2><b>Enter the same Prompt and add the Start Time and End Time & Status & Comments Column</b> </h2>
+        <pre>
+1. Hi, Happy Evening
+
+2. Hae, please create an action plan to prepare for my<mark>Frontend Developer.</mark> I have already collected and 
+documented the below items for my preparation
+
+List of Abbreviations:
+Key Topic - KT
+Sub Topic - ST
+Recommednation - Rec
+Alternative  - Alt
+
+I don't want you to give me a plan right now! Instead I want you to understand the above list first.
+
+
+3. I also have a list of<mark> KT, St, Rec, Alt </mark>for my preparation journey for<mark>Frontend Developer!</mark>
+
+I just want you to understand the list first! If you are ready, I will provide the list to you!
+
+4. Considering I am a <mark>Beginner</mark> slow learner I need time to learn every concepts among the topics
+as well as sub-topics, so now provide me a plan based on it! You can also go ahead and expand the plan based 
+on my learning capacity i.e. you can give dedicated time for every concepts among the topics as well as sub-topics! 
+Make sure I am going to spend <mark> 4 hour </mark> each day of the week!
+
+
+5. Just create a plan for the below key topic and its respective sub-topics
+
+[1st Key Topic & Their Respective Sub topics]
+
+NOTE:
+Provide me this plan in a tabular format
+
+6. Also add up week no and date in this plan
+
+Consider I am going to start my learning journey from June 27th 2024
+<mark>And add Start Time & End Time & Status Column & Comments Column</mark>
+
+7. [2nd Key Topic & Their Respective Sub topics]
+
+8. Kindly give me a detailed plan for Week 5, 6 and 7 too
+
+as you did above!
+
+        </pre>
+    </body>
+</html>

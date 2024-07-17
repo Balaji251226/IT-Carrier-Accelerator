@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 43</title>
+    </head>
+    <body>
+        <style>
+            h1{
+                font-size: 30px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align: center;
+                font-weight: bold;
+                color: darkorchid;
+            }
+            p,ol{
+                font-size: 25px;
+                font-weight: bold;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                /* color: indigo; */
+            }
+
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 43</b></button></a></h1>
+        <h1>How to Handle the Interview Questions ? </h1>
+        <ol>
+            <li>Prepared Question (repeated quesstion, frequently)</li>
+            <li>Unprepared Question</li>
+        </ol>
+        <ol>
+            <li><mark>Prepared Question</mark></li><br><br>
+            <ol>
+                <li><mark>Tell Me About Yourself ?</mark></li>
+                <p>HR unaga name solitangana na again name solla theva illa and start panalam
+                    first of all thank you for give this Opportunity intdrducing myself
+                    and resume la illatha visayatha pesanum and ethuku IT change panringa athukana 
+                    Genuine reason sollanum
+                </p>
+                <li><mark>Why Should I Hire You ?</mark></li>
+                <p>Namolodo strength and technical skills ha emphasis pani pesanum</p>
+                <ol>
+                    <li><u>Starting la ketta ?</u></li>
+                    <p>Na ennodo introduction laye enna pathi light ha solli irupen and intha Interview pogum
+                        i hope afer procedding few mintues the Question you are going to ask me will make
+                    you believe you should hire me in your organisation </p>
+                    <li><u>Last ha vantha ?</u></li>
+                    <p>I hope for the past few mintues i have already described a lot of things about me and i surely 
+                        believe i am suitable for this job to be part of the your organisation and take your
+                        organisation to the next level and that's why you can hire me.
+                    </p>
+                </ol>
+                <li><mark>My Greatest Strength ?</mark></li>
+                <p>Namalodo Greatest Strength ha sollitu athukana evidence sollanum and athu professional ha 
+                    irukanum not like personal
+                </p>
+                <li><mark>My Weakness ?</mark></li>
+                <p>Weakness sollanum atha eppudi overcome panra athukana enna enna step eduthu iruka atha 
+                    sollanum and athukana evidence solla kudathu.
+                </p>
+                <li><mark>What Are Your Carrier Goals ?</mark></li>
+                <ol>
+                    <li><mark>Short Term Goals ?</mark></li>
+                    <p>Intha Question ethukuna nee ethana naal intha organisation la irupa atha check pana and 
+                        my short term goal is get in job and take responsibilities quickly and i goto
+                        next level postion in few years like team lead. And nama pesurathaul HR ku 
+                        Goosebumps create aganum.
+                    </p>
+                    <li><mark>Long Term Goals ?</mark></li>
+                    <p>Epo na work pana pora position la next level like decision making like leadership
+                        position ku move and upscaling my skills and i grow and my company also grow up and 
+                        nee enna kudupa company ku atha first sollanum enna eduthupa nu solla kudathu.
+                    </p>
+                </ol>
+                <li><mark>Do You have any Question for me ?</mark></li>
+                <ol>
+                    <li>Can I know How Perform in this Interview ?</li>
+                    <p>Positive Answer na Not issue ? <br><br>
+                    Negative Review vantha ?
+                    <br>Unga organisation la place ana kandipa ennodo 100 % Potential pottu intha company yila
+                    oru key performer in your company, I will make sure never regreat for Selecting Me. </p>
+                </ol>
+            </ol>
+        </ol>
+    </body>
+</html>

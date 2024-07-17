@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 36</title>
+    </head>
+    <body>
+        <style>
+            h1,h2,p{
+                text-align: center;
+                font-size: 30px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color:magenta;
+
+            }
+            .glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><mark>Communication Mastery</mark></h1>
+        <h1><b> Day 36 to 40</h1>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 36</b></button></a></h1>
+        <!-- <h1><a href="index.html"> Day 36</a></h1> -->
+        <h2><mark> Fear of criticism</mark></h2>
+        <p>Unaku English varathu nee pesuna ellarum sirichuruvang so nee pesatha nu safe guard panuthu</p>
+        <h2><mark>Internal or External criticism</mark></h2>
+        <p><q>Ennaku munnadi irukura ellam paithiyakaranga or Mad</q></p>
+        <h2><mark>Fluency</mark></h2>
+        <p>Think in Only English don't think tamil and think panatha appudiye pesu process panatha<br>
+        <q>Split out the sentence</q><br><q>Have a Tonation oda pesunalye Fluency Airum so sentence la tonation irukanum</q></p>
+        <h2><mark>Proficiency</mark></h2>
+        <p>Simple words ha Think pananum Think in English or Just Frame Think sentence short</p>
+        <h2><mark><q>Think English</q></mark></h2>
+        <h2><mark><q>Talk English</q></mark></h2></b>
+    </body>
+</html>

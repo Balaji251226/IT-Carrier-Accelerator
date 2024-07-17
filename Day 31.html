@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 31</title>
+    </head>
+    <body>
+        <style>
+            h1,h2,h3{
+                text-align: center;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: crimson;
+            }
+            p{
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: darkblue;
+            }
+            ol{
+                font-size: 22px;
+                font-style: italic;
+                color: darkred;
+            }
+
+/*body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+*/
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><mark>Become a JOB Magnet</mark></h1>
+        <h1>Day 31 to 35</h1>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 31</b></button></a></h1>
+        <h1><u>Job Professional Tools</u></h1>
+        <h2><mark>Face value Very Very Important</mark></h2>
+        <h2><mark>Photo</mark> is the first identity</h2>
+        <p>Professional shirt kindly buy a coat or blazzer color my preference is (navy blue) or ur color choice (Perfect fit)
+            <p>Photoshoot is your Asset or One time investment.
+                20 % Effort Gives 80 % Results
+                <ol><b>
+                    <li> Proper Groom</li>
+                    <li> Minimal Accesaries</li>
+                    <li> Photoshoot Before Prepare for Poses</li>
+                    <li> Watch</li>
+                </ol></b>
+            </p>
+        </p>
+        <ol>
+            <ul><b>Don't Use Coolers and Glasses</b></ul>
+        </ol>
+        <h2>Resume</h2>
+        <p>Photo need kadiyathu (OPtional) 
+            Why Resume is Important ?
+        </p>
+        <ol><b>
+            <li>Doamin Key words use highly</li>
+            <li>Hot skill ku equal ha Soft skill irukanum </li>
+            <li>Skill sets</li>
+            <li>Problem Solving</li>
+        </ol></b>
+        <h3><mark><q>Presentation equal ha Content irukanum</q></mark></h3>
+        <h2>Linkedin la daily one post podanum</h2>
+        <h2>Linkedin Profile link ha resume la podanum</h2>
+        <h3>POW (Proof of work)</h3>
+        <h2><mark><q>NO SHORTCUT TO SUCCESS</q></mark></h2>
+    </body>
+</html>

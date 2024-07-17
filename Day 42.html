@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 42</title>
+    </head>
+    <body>
+        <style>
+            h1,h2{
+                text-align: left;
+                font-size: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+            }
+            p,ol{
+                font-size: 22px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bold;
+                color:deeppink;
+            }
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1 style="text-align: center;"><a href="index.html"><button class="glow-on-hover" type="button"> <b>Day 42</b></button></a></h1>
+        <h1><mark>Technical HR</mark></h1>
+        <h1>Basic Skills Set la strong ha irukanum </h1>
+        <ol>
+            <li>Role Specific Interview</li>
+            <li>General Open Interview (ithana vaccancy iruku) not mention role</li>
+        </ol>
+        <p>Antha role kana Fundamental skill set strong ha irukanum
+            <ol>
+                <li>Client Server Architecture</li>
+                <li>DSA</li>
+                <li>OOPS</li>
+                <li>Role Base Fundamental</li>
+            </ol></p>
+            <h2>Why Choose Our Company ?</h2>
+            <p>HR ha Impress pana try pana kudathu nama ellarum Impress pana tha try panuvom en na adutha round ku 
+                select aganum <br><br>
+                <mark><q>Never Ever Try To Impress</q></mark> <br><br>
+                <mark><q>Just Express Yourself Genuine in the Interview</q></mark>
+            </p>
+            <ol>
+                <li>The ability to say No</li><br>
+                <li>Question ku answer theriyala No sollanum not try to Impress</li><br>
+                <li>Genuine ha theriyala na No sollalam athukunu Interview full ha I Don't Know solla kudathu</li><br>
+                <p>Ethachum new word sonnaruna <br>
+                <u>Script :</u>This is the first time i am hearing the word. After Interview get some time i try to learn that.</p>
+            </ol>
+            <ol>
+                <li>Emphasis Pannanum like Project pathi i spent this time for my project and i only handle
+                    the whole project and i solve this problem and i face lot of problems in this project. </li><br>
+                <li>Job Description - JD theriunjukitu poganum</li><br>
+                <li>SDLC Concept use pani enodo project ha build panne nu sollalam</li><br>
+                <li>Clients handling</li><br>
+                <li>My roles Day to Day task theriunjukanum</li><br>
+            </ol>
+        <h2><mark>General HR</mark></h2>
+        <p>Family ya pathi sollalam and konjam critical ha irukura mathiri katalam ethana nala ivan nama Company
+            kaga ulaipan and nama pora company oda core value enna nu pathutu poganum and culture pathi 
+            theriunjukanum and antha company main Agenda Enna.
+        </p>
+    </body>
+</html>

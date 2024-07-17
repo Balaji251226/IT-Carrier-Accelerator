@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 41</title>
+    </head>
+    <body>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: crimson;
+                font-weight: bold;
+            }
+            h2,h3{
+                font-size: 22px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: crimson;
+            }
+            p,ol{
+                font-size: 20px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color:blue;
+            }
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><b>Interview Hacker</h1>
+        <h1>Day 41 to 45</h1>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 41</b></button></a></h1>
+        <h1 style="text-align: left;"> What is Interview ?</h1>
+        <p>HR vanthu intha role na choose aven na enkita quesstion keparu like athu oru test mathiri
+            avaru kekura question ku na answer sollanum and athu vanthu oru filter process.
+        </p>
+        <h2>IT Basic Requirement Process</h2>
+        <ol>
+            <li>Aptitude Round</li>
+            <li>Group discussion</li>
+            <li>Coding Round</li>
+            <li>Technical HR</li>
+            <li>General HR</li>
+        </ol>
+        <h2><mark>Aptitude Round</mark></h2>
+        <p>Aptitude why contect in IT because avanuku logical thinking and critical thinking irukanu check panra
+            process like Aptitude Round ku prepare pani tha aganum<mark>20 % efforts gives to 80 % Results.</mark>
+        </p>
+        <h2><mark>Group Discussion</mark></h2>
+        <p><ol>
+            <li>General Knowledge irukanum</li><br>
+            <li>Specific topic irukathu most of times give the Generalised topic</li><br>
+            <li>Beginner ha irukanum</li><br>
+            <li><mark>On your mic first</mark></li><br>
+            <li><mark>Open your mouth first</mark></li><br>
+            <h3><u> Two Types of Group Discussion</u></h3>
+            <ol>
+                <li>Ellarum Pesunga nu sonna namale time ha consume pana kudathu give chances to others.min 3 sec or max 5 sec yarum pesalana nama pesalam</li><br>
+                <li>Name out panuvanga or time set paniruvanga 2 min each person pesanum</li><br>
+                <li>Group discussion like debate mathiri poiruchuna neutral points pesanum maximum debate maathir poga chance illa</li><br>
+                <li>Appudi Debate mathiri pochuna use this script</li>
+                <p>Hey guys aloud with your permission we can i speak the listen to everyone this is a group discussion not a deabte so please 
+                    guys return back to the group discussion
+                </p>
+                <h3>Break your points and Engage throughout the discussion</h3>
+                <li>Points ha split panni anga anga pesalam </li>
+                <h3>Be a Excelent Concluder</h3>
+                <li>All good notable points ha mind la vachukitu atha ellam collect pani overall oru conclution panalam</li>
+            </ol>
+            <h2>Any quesstion ask for me antha quesstion kekum pothu ?</h2>
+            <h2>Be a Eyes breaker slient ha irukura place la nama antha slient situation ha break pannanum</h2>
+            <h2 style="text-align: center;"><mark><q> Just Talk</q></mark></h2>
+        </ol></p>
+        <h2><mark>Coding Round</mark></h2>
+        <p>DSA nala theriyanum and DSA vachu entha program language use panringalo antha program la DSA concept apply pani solve pana theriyanum.</p>
+    </body>
+</html>

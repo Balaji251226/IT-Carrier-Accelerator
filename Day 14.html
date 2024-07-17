@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Day 14
+        </title>
+    </head>
+    <body>
+        <style>
+            h1,h2,h3{
+                text-align: center;
+                font-size: 30px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: blue;
+            }
+            pre{
+                font-size: 18px;
+                font-family: Arial, Helvetica, sans-serif;
+                color:darkred;
+            }
+
+            .glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 14</b></button></a></h1>
+        <h1><b>Pre Discussion</h1>
+        <h2>SDLC Concept Discussion</h2>
+        <h3>Origin Of SDLC</h3>
+        <pre>
+            In the 1960s, SDLC was known as the “systems development lifecycle.” The National Computing Centre of the United Kingdom devised this basic SDLC model in the late 1960s, which was reported in 1971 by A. Daniels with D.A. 
+            
+            Large firms established the concept to better manage complicated business processes. 
+            
+            However, that requires a great deal of processing and analyzing, as Geoffrey Elliott discusses in the book, “Global Business Information Technology”.</pre>
+        <h1>Detail Of SDLC Concept</h1>
+            <pre>            1. Requirements gathering and analysis: This phase involves gathering information about the software requirements from stakeholders, such as customers, end-users, and business analysts.
+
+            2. Design: In this phase, the software design is created, which includes the overall architecture of the software, data structures, and interfaces. It has two steps:
+            
+                <span style='font-size:30px;'>&#11166;</span>   High-level design (HLD): It gives the architecture of software products.
+   
+                <span style='font-size:30px;'>&#11166;</span>  Low-level design (LLD): It describes how each and every feature in the product should work and every component.
+   
+            3. Implementation or coding: The design is then implemented in code, usually in several iterations, and this phase is also called as Development.
+            
+                things you need to know about this phase:
+            
+                <span style='font-size:30px;'>&#11166;</span>  This is the longest phase in SDLC model.
+   
+                <span style='font-size:30px;'>&#11166;</span> This phase consists of Front end + Middleware + Back-end.
+   
+                <span style='font-size:30px;'>&#11166;</span> In front-end: Development of coding is done even SEO settings are done.
+   
+                <span style='font-size:30px;'>&#11166;</span> In Middleware: They connect both the front end and back end.
+   
+                <span style='font-size:30px;'>&#11166;</span> In the back-end: A database is created.
+   
+            4. Testing: The software is thoroughly tested to ensure that it meets the requirements and works correctly.
+            
+            5. Deployment: After successful testing, The software is deployed to a production environment and made available to end-users.
+            
+            6. Maintenance: This phase includes ongoing support, bug fixes, and updates to the software.</pre>
+        </body>
+</html>
+
+

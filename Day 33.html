@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 33</title>
+    </head>
+    <body>
+        <style>
+            h1,h2{
+                text-align: center;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: darkblue;
+                /* background-color: aquamarine; */
+            }
+            p,li{
+                text-align: left;
+                font-size: 22px;
+                font-family: 'Times New Roman', Times, serif;
+                color: crimson;
+                
+            }
+            center{
+                font-size: 22px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: darkorchid;
+            }
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 33</b></button></a></h1>
+        <h1>
+            Job Seeker Enga Athigama Eluthuvanga ? <br> Resume  and cover letter
+        </h1>
+        <h1>Resume > Cover Letter like as a Husband & Wife </h1>
+        <p><center> <span style='font-size:30px;'>&#11166;</span>  Mail anupum pothu write panni athodo ennodo Resume ha attach pani anupurathu</center></p>
+        <h2>What is a Hook ?</h2>
+        <p><center><span style='font-size:30px;'>&#11166;</span> Ungala oru video appudiye antha video la stay pana vaikirthukana oru way tha Hook.</center></p>
+        <h2>What is Hook Cover Letter ?</h2>
+        <p><center><mark>HR Padikirathukaga Hook use pandrom</mark></center></p>
+        <h2>Cover Letter As 3 Paragraphs.</h2>
+        <ol><b>
+            <li><p>Why i am interested for this job and in your company and oru company oda 
+                core value enna nu search pani atha add up pannanunum. You need talk something condatery
+                about this role and industry company ya pathi theriunjuka evolo effort potu iruka atha 
+                add panalam and any special give that role
+            </p></li>
+            <li><p>How You are Eligible ?<br>
+            Taking Experience (2 or 3 lines)<br>
+            Taking about your skills<br>
+            Internship or explain your projects ha Quantify pannanunum and atha evolo time effort pottu paning
+            and ethana pera antha project la manage paninga atha ellam add up panalam</p></li>
+            <li><p>CTA ha Means <q><mark>Call to Action</mark></q> I kindly request to replay me<br>
+            I attach my resume, I am very eligible for this role and schedule the interview for this role</p></li>
+        </ol></b>
+    </body>
+</html>

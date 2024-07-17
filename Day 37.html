@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day 37</title>
+    </head>
+    <body>
+        <style>
+            h1{
+                text-align: center;
+                font-size: 30px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p,h2,ol,li{
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                
+            }
+            .glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+        </style>
+        <h1><a href="index.html"> <button class="glow-on-hover" type="button"> <b>Day 37</b></button></a></h1>
+        <h1><mark>Self Talk</mark></h1><b>
+        <p style = "text-align:center">Vaiya Thorakama manasukulaye pesurathu tha self talk</p>
+        <ol>
+            <li>Postive Self Talk</li>
+            <li>Negative Self Talk</li>
+        </ol>
+        <h2>How to handle the Negative Self Talk ?</h2>
+        <ol>
+            <li>Reccognized the problem</li>
+            <li>Acknowledge the reason</li>
+            <li>Once you picked the problem Talk postively again the Negative self talk</li>
+        </ol> 
+        <h2><mark>My Negative Self Talk</mark></h2>
+        <p>1. Eye contact issue na people oda meting or video or real la pesum pothu eye contact missing 
+            i see the around the things<br><br>2. Sentence Formation problem on the spot la topic english la 
+            sentence make pana mudiyala<br><br>3. Little stage fear and people oda real time la eppudi approach 
+            panrathu  nu therla. 
+        </p>
+        <h2><mark>My Postive Self Talk</mark></h2>
+        <p>1. Yes i have eye contact issue and i improve that irunthalum na poiye pesuren<br><br>
+       2. Yes ennala sentence formation pana mudiyala enna athuku innum parichayam agala adha overcome pana
+            consume more english content see any video in english and listen any english podscat make sure i speak in english<br><br>
+       3. Yes stage fear iruku atha overcome pana neraya people oda stage presentation consume panni atha overccome panuven<br><br>
+       4. Yes ennala real time People kuda eppudi approach panrathu nu athukana techniquies kathukitu conversation build pannuven.</p>
+        <h2><q><mark> Tip :</mark> Intha Postive Slef Talk Paper la wirte pani atha before sleep and  after wakeup read the sentences  subconsious mind la register airum<br>
+        Read Aloud and See and Feel that and Believe </q></h2></b>
+    </body>
+</html>
